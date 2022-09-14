@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  margin-top: 7em;
+
+}
+
+.buttons {
+    position: relative;
+    display: grid;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.24),
+        inset -5px -5px 20px #fff;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.buttons #value {
+    position: relative;
+    user-select: none;
+    grid-column: span 4;
+    margin: 10px;
+    padding: 10px;
+    height: 2em;
+    width: 11em;
+    font-size: 40px;
+    text-align: end;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.24),
+        inset -5px -5px 20px #fff;
+    border-radius: 12px;
+
+}
+
+.buttons span {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.24),
+        inset -5px -5px 20px #fff;
+    border-radius: 12px;
+}
+
+.buttons span.Clear {
+    grid-column: span 2;
+    background: red;
+    width: 93%;
+}
+
+.buttons span#plus {
+    grid-row: span 2;
+    background: rgb(234, 255, 7);
+    height: 88%;
+}
+
+#equl {
+    background: blue;
+}
+
+.buttons span#div:active,
+.buttons span#mul:active,
+.buttons span#plus:active,
+.buttons span#min:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+        inset -5px -5px 20px rgb(255, 255, 255),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
